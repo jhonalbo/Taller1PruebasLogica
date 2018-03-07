@@ -1,0 +1,3 @@
+INDEX VERSION 1.130+C:\Users\jhonalbo\Desktop\LogicaTaller1\.metadata\.plugins\org.eclipse.jdt.core
+2022294719.index
+1067488366.index

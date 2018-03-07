@@ -1,0 +1,20 @@
+
+public class Logica {
+	
+	public static void media(Float[] numeros){
+		for(Float n : numeros){
+			System.out.println("numero: "+n);
+		}
+	}
+	
+	public static void main(String[] args){
+		Float[] numeros = {
+				Float.parseFloat("1"), 
+				Float.parseFloat("2"), 
+				Float.parseFloat("4"), 
+				Float.parseFloat("0")
+				};
+		media(numeros);
+	}
+
+}

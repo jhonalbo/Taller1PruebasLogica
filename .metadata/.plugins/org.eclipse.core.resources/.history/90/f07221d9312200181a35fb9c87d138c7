@@ -1,0 +1,19 @@
+
+public class Logica {
+	
+	public static void media(Float[] numeros){
+		Float sum = 0f;
+		int cont = 0;
+		for(Float n : numeros){
+			sum = sum + n;
+			cont++;
+		}
+		System.out.println(cont);
+	}
+	
+	public static void main(String[] args){
+		Float[] numeros = {1f, 2f, 4f, 0f};
+		media(numeros);
+	}
+
+}
