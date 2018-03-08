@@ -6,24 +6,34 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import co.edu.udea.businesslogic.Calculator;
+import co.edu.udea.businesslogic.ICalculator;
 import co.edu.udea.dtoWs.CollectionDataWs;
+import co.edu.udea.dtoWs.ResponseApp;
 import co.edu.udea.linkedlist.ListaDobleCircularCabeza;
 import co.edu.udea.util.LinkedListGenerator;
 
 @Path("/calculator")
 public class MainService {
 	
-	
+	ICalculator calculator;
 	
 	@POST
 	@Path("/meanSD")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-	public String getMeanAndSD(CollectionDataWs data){
+	public ResponseApp getMeanAndSD(CollectionDataWs data){
 		System.out.println(data.getData().get(0));
+		float mean = 0;
+		float standardDeviation = 0;
+		calculator = new Calculator();
 		ListaDobleCircularCabeza numberList = null;
 		numberList = LinkedListGenerator.generateList(data.getData());
-		
-		return "Good";
+		mean = calculator.calculateMean(numberList);
+		standardDeviation = calculator.calculateStandardDeviation(numberList);
+		ResponseApp response = new ResponseApp();
+		response.setMean(mean);
+		response.setStandardDeviation(standardDeviation);
+		return response;
 	}
 }

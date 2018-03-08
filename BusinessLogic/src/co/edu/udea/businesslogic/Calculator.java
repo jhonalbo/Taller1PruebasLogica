@@ -30,13 +30,13 @@ public class Calculator implements ICalculator{
 
 	@Override
 	public float calculateMean(ListaDobleCircularCabeza dataList) {
-		// TODO Auto-generated method stub
+		System.out.println("Calculating mean...");
 		return 0;
 	}
 
 	@Override
 	public float calculateStandardDeviation(ListaDobleCircularCabeza dataList) {
-		// TODO Auto-generated method stub
+		System.out.println("Calculating SD...");
 		return 0;
 	}
 	

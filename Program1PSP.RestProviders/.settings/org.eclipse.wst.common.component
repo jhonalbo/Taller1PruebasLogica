@@ -6,6 +6,9 @@
         <dependent-module archiveName="Program1PSP.LinkedList-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Program1PSP.LinkedList/Program1PSP.LinkedList">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="Program1PSP.BusinessLogic-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Program1PSP.BusinessLogic/Program1PSP.BusinessLogic">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="Program1PSP.RestProviders"/>
         <property name="java-output-path" value="/Program1PSP.RestProviders/build/classes"/>
     </wb-module>

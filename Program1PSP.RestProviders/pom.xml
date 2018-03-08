@@ -87,6 +87,11 @@
 			<artifactId>Program1PSP.LinkedList</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>Program1PSP.BusinessLogic</groupId>
+			<artifactId>Program1PSP.BusinessLogic</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
