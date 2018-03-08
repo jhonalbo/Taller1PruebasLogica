@@ -30,6 +30,7 @@ public class ListaDobleCircularCabeza {
 		if (cantidad == 0)
 		{
 			cabeza = nNodo;
+			cabeza.setSiguiente(nNodo);
 			ultimo = nNodo;
 		}else{
 			ultimo.setSiguiente(nNodo);
@@ -37,6 +38,15 @@ public class ListaDobleCircularCabeza {
 		}
 		
 		cantidad ++;
+	}
+	
+	public ListaDobleCircularCabeza llenarLista(float[] numeros){
+		ListaDobleCircularCabeza lista = new ListaDobleCircularCabeza();
+		for(float n : numeros){
+			lista.AgregarNodo(n);
+		}
+		
+		return lista;
 	}
 	
 	public float RetornarSuma()

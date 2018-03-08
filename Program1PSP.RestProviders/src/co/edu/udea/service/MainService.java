@@ -22,18 +22,19 @@ public class MainService {
 	@Path("/meanSD")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-	public ResponseApp getMeanAndSD(CollectionDataWs data){
-		System.out.println(data.getData().get(0));
+	public String getMeanAndSD(String data){
+		/*System.out.println(data.getData().get(0));
 		float mean = 0;
 		float standardDeviation = 0;
 		calculator = new Calculator();
 		ListaDobleCircularCabeza numberList = null;
 		numberList = LinkedListGenerator.generateList(data.getData());
 		mean = calculator.calculateMean(numberList);
-		standardDeviation = calculator.calculateStandardDeviation(numberList);
-		ResponseApp response = new ResponseApp();
-		response.setMean(mean);
-		response.setStandardDeviation(standardDeviation);
-		return response;
+		standardDeviation = calculator.calculateStandardDeviation(numberList);*/
+		/*ResponseApp response = new ResponseApp();
+		response.setMean(1f);
+		response.setStandardDeviation(1f);*/
+		String hola = "hola";
+		return hola;
 	}
 }
