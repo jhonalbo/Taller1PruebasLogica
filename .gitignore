@@ -1,0 +1,8 @@
+/classes/
+/.apt_generated/
+/target/
+/.classpath
+/.settings
+/.factorypath
+/.tern-project
+/bin
